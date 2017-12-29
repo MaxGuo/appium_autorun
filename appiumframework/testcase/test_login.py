@@ -3,6 +3,10 @@ from appium import webdriver
 import unittest
 #from appiumframework.PO.login_page import CreatPage
 import time
+import threading
+import xlrd,xlwt,xlutils
+from xlutils.copy import copy
+import datetime,subprocess
 
 from appiumframework.PO.login_page import LoginPage
 from appiumframework.PO.sysetting_page import SettingPage
@@ -29,6 +33,9 @@ class Test(unittest.TestCase):
         time.sleep(5)
 
 
+
+
+
     def tearDown(self):
         self.driver.quit()
 
@@ -47,6 +54,8 @@ class Test(unittest.TestCase):
         sp = SettingPage(self.driver)
         sp.setting_botton_link()
         sp.run_case('')
+
+        #修改密码
         sp.run_updatapwd('gjm123')
         sp.run_newpwd('gjm147')
         sp.run_confirm_newpwd('gjm147')
