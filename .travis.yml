@@ -1,20 +1,5 @@
 language: python
 python:
-  - "2.6"
-  - "2.7"
-  - "3.3"
-  - "3.4"
-  - "3.5"
-  - "3.5-dev"  # 3.5 development branch
-  - "3.6"
-  - "3.6-dev"  # 3.6 development branch
-  - "3.7-dev"  # 3.7 development branch
-  - "nightly"
-# command to install dependencies
-install:
-  - pip install -r requirements.txt
-# command to run tests
-script:
-  - pytest # or py.test for Python versions 3.5 and below
+  - "3.6.2"
 notifications:
    webhooks:https://oapi.dingtalk.com/robot/send?access_token=5cd97a9a9beddb87fbe835e092f806167559ae4fcf013013acea2242dab315a2
