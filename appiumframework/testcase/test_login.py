@@ -1,4 +1,6 @@
 #coding=utf-8
+_author_ = "Maoge"
+
 from appium import webdriver
 import unittest
 #from appiumframework.PO.login_page import CreatPage
