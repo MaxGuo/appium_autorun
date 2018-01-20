@@ -1,4 +1,5 @@
 #coding=utf-8
+_author_ = "Maoge"
 import unittest
 import HTMLTestRunner
 
