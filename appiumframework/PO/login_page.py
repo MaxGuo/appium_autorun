@@ -11,7 +11,7 @@ class LoginPage(base_page.Action):
 
     def login_button_link(self):
         self.find_element(self.pwlogin_botton_loc).click()
-        time.sleep(1)           #点击密码登录
+        time.sleep(2)           #点击密码登录
 
     def run_case1(self,value):
         self.find_element(self.et_phone_loc).send_keys(value)

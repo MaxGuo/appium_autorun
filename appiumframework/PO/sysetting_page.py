@@ -26,36 +26,36 @@ class SettingPage(base_page.Action):
 
     def setting_botton_link(self):
         self.find_element(self.setting_botton_loc).click()
-        time.sleep(5)           #点击系统设置
+        time.sleep(2)           #点击系统设置
 
 
     def run_case(self,value):
         self.find_element(self.about_loc).click()
-        time.sleep(5)          #点击关于
+        time.sleep(2)          #点击关于
         self.find_element(self.checkversion_botto_loc).click()
-        time.sleep(5)  # 点击版本更新
+        time.sleep(2)  # 点击版本更新
         self.find_element(self.back_botto_loc).click()
-        time.sleep(5)  # 点击返回按钮
+        time.sleep(2)  # 点击返回按钮
         self.find_element(self.msg_loc).click()
-        time.sleep(5)  # 点击消息通知
+        time.sleep(2)  # 点击消息通知
         self.find_element(self.back_botto_loc).click()
-        time.sleep(5)  # 点击返回按钮
+        time.sleep(2)  # 点击返回按钮
 
     def run_updatapwd(self,value):
         self.find_element(self.update_pwd_loc).click()
-        time.sleep(5)  # 点击修改密码
+        time.sleep(2)  # 点击修改密码
         self.find_element(self.old_pwd_loc).send_keys(value)
-        time.sleep(5)  # 输入旧密码
+        time.sleep(2)  # 输入旧密码
 
     def run_newpwd(self,value):
         self.find_element(self.new_pwd_loc).send_keys(value)
-        time.sleep(5)  # 输入新密码
+        time.sleep(2)  # 输入新密码
 
     def run_confirm_newpwd(self,value):
         self.find_element(self.new_pwd_confirm_loc).send_keys(value)
-        time.sleep(5)  # 输入确认密码
+        time.sleep(2)  # 输入确认密码
         self.find_element(self.confirm_botton_loc).click()
-        time.sleep(5)  # 点击确认按钮
+        time.sleep(2)  # 点击确认按钮
 
      #退出登录
   #  def run_exit(self,value):
