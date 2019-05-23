@@ -1,4 +1,5 @@
 #coding=utf-8
+_author_ = "Maoge"
 from appiumframework.PO import base_page
 import time
 
