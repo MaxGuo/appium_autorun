@@ -1,6 +1,8 @@
 #coding=utf-8
 from appium import webdriver
 import unittest
+import json
+import logging
 #from appiumframework.PO.login_page import CreatPage
 import time
 import threading
@@ -16,8 +18,8 @@ class Test(unittest.TestCase):
     def setUp(self):
         desired_caps = {
             'platformName': 'Android',
-            'deviceName': 'Android Emulator',#可有可无
-            'platformVersion': '5.0',
+            'deviceName': 'ZY2233J8L4',#可有可无
+            'platformVersion': '5.1',
 
             # apk包名
             'appPackage': 'com.meipingmi.manager',
@@ -45,7 +47,6 @@ class Test(unittest.TestCase):
         sp.login_button_link()
         sp.run_case1('13805728638')
         sp.run_case2('gjm123')
-
 
 
     def test_setting(self):

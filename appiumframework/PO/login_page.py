@@ -10,11 +10,11 @@ class LoginPage(base_page.Action):
 
     def login_button_link(self):
         self.find_element(self.pwlogin_botton_loc).click()
-        time.sleep(3)           #点击密码登录
+        time.sleep(1)           #点击密码登录
 
     def run_case1(self,value):
         self.find_element(self.et_phone_loc).send_keys(value)
-        time.sleep(5)          #输入手机号码
+        time.sleep(2)          #输入手机号码
 
     def run_case2(self, value):
         self.find_element(self.et_pwd_loc).send_keys(value)
